@@ -1,0 +1,6 @@
+[submodule "modules/rewolf-wow64ext"]
+	path = modules/rewolf-wow64ext
+	url = https://github.com/wzv5/rewolf-wow64ext
+[submodule "modules/IniParser"]
+	path = modules/IniParser
+	url = https://github.com/wzv5/IniParser
