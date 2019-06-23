@@ -128,11 +128,6 @@ static void hook_term()
 
 #else
 #include "easyhook.h"
-#ifdef _M_IX86
-#pragma comment (lib, "easyhk32.lib")
-#else
-#pragma comment (lib, "easyhk64.lib")
-#endif
 
 #define HOOK_MANUALLY HOOK_DEFINE
 #define HOOK_DEFINE(rettype, name, argtype) \
