@@ -5,21 +5,7 @@
 #include "cache.h"
 #include "hash_list.h"
 #include <VersionHelpers.h>
-#include <IniParser/ParseIni.h>
-
-#ifdef _WIN64
-#ifdef DEBUG
-#pragma comment (lib, "iniparser64_dbg.lib")
-#else
-#pragma comment (lib, "iniparser64.lib")
-#endif
-#else
-#ifdef DEBUG
-#pragma comment (lib, "iniparser_dbg.lib")
-#else
-#pragma comment (lib, "iniparser.lib")
-#endif
-#endif
+#include "modules/IniParser/IniParser/ParseIni.h"
 
 #define MACTYPE_VERSION		20170628
 #define MAX_FONT_SETTINGS	16
