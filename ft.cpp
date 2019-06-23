@@ -1999,6 +1999,7 @@ BOOL ForEachGetGlyphFT(FreeTypeDrawInfo& FTInfo, LPCTSTR lpString, int cbString,
 				}
 				{
 					CCriticalSectionLock __lock(CCriticalSectionLock::CS_LIBRARY);
+					/*
 					if (bLoadColor && FT_HAS_COLOR(freetype_face)) {
 						// use custom API to get color bitmap
 						if (FT_Glyph_To_BitmapEx(&((*glyph_bitmap)->ft_glyph), render_mode, 0, 1, 1, glyph_index, freetype_face)) {
@@ -2006,7 +2007,7 @@ BOOL ForEachGetGlyphFT(FreeTypeDrawInfo& FTInfo, LPCTSTR lpString, int cbString,
 							nRet = false;
 							goto gdiexit;
 						}
-					} else
+					} else*/
 					if(FT_Glyph_To_Bitmap(&((*glyph_bitmap)->ft_glyph), render_mode, 0, 1)){
 						FT_Done_Ref_Glyph(glyph_bitmap);
 						nRet= false;
