@@ -4,3 +4,6 @@
 [submodule "modules/IniParser"]
 	path = modules/IniParser
 	url = https://github.com/wzv5/IniParser
+[submodule "modules/easyhook"]
+	path = modules/easyhook
+	url = https://github.com/wzv5/EasyHook

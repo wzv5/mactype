@@ -127,7 +127,7 @@ static void hook_term()
 #undef HOOK_MANUALLY
 
 #else
-#include "easyhook.h"
+#include "myeasyhook.h"
 
 #define HOOK_MANUALLY HOOK_DEFINE
 #define HOOK_DEFINE(rettype, name, argtype) \

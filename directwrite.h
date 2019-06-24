@@ -1,6 +1,6 @@
 #include "common.h"
 #include <VersionHelpers.h>
-#include "easyhook.h"
+#include "myeasyhook.h"
 
 #pragma once
 
